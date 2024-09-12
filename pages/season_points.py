@@ -6,7 +6,7 @@ from dash_bootstrap_templates import load_figure_template
 import plotly.express as px
 from dash.dependencies import Input, Output
 
-dash.register_page(__name__, path='/season_points', name="Season Points")
+dash.register_page(__name__, path='/season_points', name="Season Points", order=2)
 
 ####################### DATASET #############################
 df2 = pd.read_excel('WHUPUP.xlsx', sheet_name='Cumulative Points')
