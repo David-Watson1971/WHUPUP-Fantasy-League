@@ -9,7 +9,7 @@ from dash.dependencies import Input, Output
 template_theme2 = "flatly"
 template_theme1 = "darkly"
 
-dash.register_page(__name__, path='/whu_tang_clan', name="WHU-Tang-Clan")
+dash.register_page(__name__, path='/whu_tang_clan', name="WHU-Tang-Clan", order=4)
 
 
 df = pd.read_excel('WHUPUP.xlsx', sheet_name='Weekly Points')
