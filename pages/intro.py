@@ -3,7 +3,7 @@ import dash
 from dash import html, dash_table, dcc
 import plotly.graph_objects as go
 
-dash.register_page(__name__, path='/', name="Home Page")
+dash.register_page(__name__, path='/', name="Home Page", order=1)
 
 ####################### LOAD DATASET #############################
 df = pd.read_excel('WHUPUP.xlsx', sheet_name='Weekly Points')
